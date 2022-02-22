@@ -25,7 +25,7 @@ if(callString.length == 0) {
         } else if (results == 'lost' && callSubString == 'heads') {
             flipResult = 'tails';
         }
-        console.log("call: '" + callSubString + "', flip: '" + flipResult + "', results: '" + results + "'");
+        console.log("{ call: '" + callSubString + "', flip: '" + flipResult + "', result: '" + results + "' }");
     }
 }
 
