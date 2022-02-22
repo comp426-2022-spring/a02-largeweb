@@ -12,9 +12,14 @@ if(callString.length == 0) {
     const index = callString.toString().indexOf('=');
     let callSubString = callString.toString().substring(index+1);
     if(!(callSubString == 'heads' || callSubString == 'tails')) {
-        console.log("Usage: node guess-flip.js --call='heads'");
+        console.log("Usage: node guess-flip.js --call='heads' | 'tails'");
     } else {
-        console.log(flipACoin(callSubString));
+        const results = flipACoin(callSubString);
+        let flipResult = 'lose';
+        if(results == 'win') {
+            flipResult = callSubString;
+        }
+        console.log("call: " + callSubString + ", flip: " + flipResult + ", results: " + results);
     }
 }
 
