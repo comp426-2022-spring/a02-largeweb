@@ -14,4 +14,4 @@ if(callString.length == 0) {
     const index = callString.toString().indexOf('=');
     callString = callString.toString().substring(index+1);
 }
-console.log(coinFlips(callString).toString());
+console.log(coinFlips(callString) + ":" + parseInt(callString));
