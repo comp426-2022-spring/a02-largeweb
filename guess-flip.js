@@ -14,7 +14,7 @@ if(callString.length == 0) {
     if(!(callSubString == 'heads' || callSubString == 'tails')) {
         console.log("Usage: node guess-flip.js --call=[heads|tails]");
     } else {
-        const results = flipACoin(callSubString);
+        let results = flipACoin(callSubString);
         let flipResult = 'tails';
         if(results == 'win' && callSubString == 'heads') {
             flipResult = 'heads';
@@ -25,7 +25,10 @@ if(callString.length == 0) {
         } else if (results == 'lost' && callSubString == 'heads') {
             flipResult = 'tails';
         }
-        console.log("{ call: '" + callSubString + "', flip: '" + flipResult + "', result: '" + results + "' }");
+        if (results == "lost") {
+            results = "lose";
+        }
+        console.log("{ call: '" + callSubString + "', flip: '" + flipResult + "', results: '" + results + "' }");
     }
 }
 

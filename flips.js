@@ -16,7 +16,8 @@ if(callString.length == 0) {
 }
 const coinFlipArr = coinFlips(callString).toString().split(',')
 // console.log(coinFlips(callString) + ":" + parseInt(callString));
-console.log(coinFlipArr + ":" + parseInt(callString));
+console.log(coinFlipArr);
+// console.log(coinFlipArr + ":" + parseInt(callString));
 let tailsCt = 0;
 let headsCt = 0;
 for(let i=0; i<coinFlipArr.length; i++) {
