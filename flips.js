@@ -28,4 +28,6 @@ for(let i=0; i<coinFlipArr.length; i++) {
         tailsCt++;
     }
 }
-console.log("tails: " + tailsCt + ", heads: " + headsCt);
+const finalScore = {"tails":tailsCt,"heads":headsCt}
+console.log(finalScore)
+// console.log("{ tails: " + tailsCt + ", heads: " + headsCt);
