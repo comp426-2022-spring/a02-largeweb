@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/comp426-2022-spring/a02-largeweb#readme",
   "dependencies": {
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.6"
   }
 }
